@@ -1,0 +1,123 @@
+<!-- Nan Zhang 8763062 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Order Form</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+
+<body>
+	<header>
+		<img class="orderImg" src="images/order.jpg" alt="">
+		<h2>Dinosaur Lecture</h2>
+		<h3>Don't Miss The Fun!</h3>
+	</header>
+
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="#" class="current">Home</a></li>
+        	<li><a href="#">Day 1</a>
+				<ul>
+					<li><a href="#">Video 1</a></li>
+					<li><a href="#">Video 2</a></li>
+					<li><a href="#">Sound 1</a></li>
+					<li><a href="#">Sound 2</a></li>
+				</ul>
+        	</li>
+			<li><a href="#">Day 2</a></li>
+        	<li><a href="#">Day 3</a></li>
+        	<li><a href="#">Day 4</a></li>
+    	</ul>
+	</nav>
+
+	<main>
+		<section>
+			<h1>Order Form</h1>
+				<form action="order.html" method="get" name="order_form" id="registration_form">
+					<span class="line"></span>
+					<span>Tickets</span>
+					<span class="line"></span>
+					<div class="tickets">
+						<label>First Name</label>
+						<input id="firstname" type="text" name="firstname"><br/>
+						<label>Last Name</label>
+						<input id="lastname" type="text" name="lastname"><br/>
+						<label>Email</label>
+						<input id="email" type="email" name="email"><br/>
+					</div>
+					<span class="line"></span>
+					<span>Payment Type</span>
+					<span class="line"></span>
+					<div class="payment">
+						<input type="radio" value="mastercard" id="radio1" name="mastercard">Master Card
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" value="visa" id="radio2" name="visa">Visa
+						<br/>
+					</div>
+					<span class="line"></span>
+					<span>Order Recordings</span>
+					<span class="line"></span>
+					<div class="orderRecordings">
+						<label>Order</label>
+						<select name="order" id="order">
+							<option value="Video">Video</option>
+							<option value="Sound">Sound</option>
+							<option value="Both">Both</option>
+						</select>
+					</div>
+					<span class="line"></span>
+					<span>Send Us Your Order</span>
+					<span class="line"></span>
+					<div class="send">
+							<input type="submit" value="Submit">
+							<input type="reset" value="Reset Fields">
+					</div>
+				</form>
+					
+			<h1>Samples</h1>
+			<!--Audio-->	
+			<audio controls>
+				<source src="media/sjv_welcome.mp3" type="audio/mp3">
+			</audio>
+			<br>
+			<!--Video-->
+			<video controls>
+				<source src="media/sjv_speakers_sampson.mp4" type="video/mp4">
+			</video>
+		</section>
+
+		<aside>
+			<figure>
+				<img src="images/poster.png" alt="">
+				<figcaption>Find Out More</figcaption>
+				<table>
+					<tr>
+						<th>Lecture</th>
+						<th>Time</th>
+					</tr>
+					<tr>
+						<td>Dino Intro</td>
+						<td>9:00 am</td>
+					</tr>
+					<tr>
+						<td>Dino Advanced</td>
+						<td>11:00 am</td>
+					</tr>
+				</table>
+			</figure>
+			<br>
+			<table>
+				
+			</table>
+		</aside>
+	</main>
+	<footer>
+		<p>&copy; 2022, Nan Zhang 8763062</p>
+	</footer>
+</body>
+</html>
